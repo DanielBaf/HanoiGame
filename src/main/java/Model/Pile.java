@@ -8,17 +8,29 @@ public class Pile {
         return nodeMeter;
     }
 
-    public void setNodeMeter(int nodeMeter) {
-        this.nodeMeter = nodeMeter;
-    }
-
     public Node getHeadNode() {
         return headNode;
     }
-
-    public void setHeadNode(Node headNode) {
-        this.headNode = headNode;
+    
+    public void push(Node n){
+        nodeMeter++;
+        if(headNode == null)
+            headNode = n;
+        else{
+            n.setDownNode(headNode);
+            headNode.setUpNode(n);
+            headNode = n;
+        }   
     }
     
+    public void pop(){
+        if(nodeMeter > 0){
+            nodeMeter--;
+            headNode = headNode.getDownNode();
+        }
+    }
     
+    public String peek(){
+        return headNode.getFact();
+    }
 }

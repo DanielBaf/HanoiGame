@@ -86,7 +86,7 @@ public class Game extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Title 1"
+                "Torre A"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -112,7 +112,7 @@ public class Game extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Title 1"
+                "Torre C"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -138,7 +138,7 @@ public class Game extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Title 1"
+                "Torre B"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -174,11 +174,13 @@ public class Game extends javax.swing.JFrame {
         minimumMovesTextField.setForeground(new java.awt.Color(153, 0, 51));
         minimumMovesTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         minimumMovesTextField.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.orange, java.awt.Color.darkGray));
+        minimumMovesTextField.setEnabled(false);
 
         userMovesTextField.setBackground(new java.awt.Color(0, 0, 0));
         userMovesTextField.setForeground(new java.awt.Color(204, 204, 204));
         userMovesTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         userMovesTextField.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.white, java.awt.Color.orange, java.awt.Color.darkGray));
+        userMovesTextField.setEnabled(false);
 
         userMovLabel.setForeground(new java.awt.Color(255, 255, 255));
         userMovLabel.setText("Tus Movimientos:");

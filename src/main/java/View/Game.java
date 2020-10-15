@@ -7,6 +7,7 @@ public class Game extends javax.swing.JFrame {
      */
     public Game() {
         initComponents();
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     /**

@@ -5,7 +5,6 @@ import View.Game;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -105,6 +104,8 @@ public class ControllerClass implements ActionListener{
             moveDiskCToA();
         else if (e.getSource() == this.game.cToBButton)
             moveDiskCToB();
+        else if (e.getSource() == this.game.restartButton)
+            start();
     }
     
     

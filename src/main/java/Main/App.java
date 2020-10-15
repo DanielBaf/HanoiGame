@@ -1,12 +1,10 @@
 package Main;
 
-import Controller.ControllerClass;
-import View.Game;
+import Controller.Splash;
 
 public class App {
     public static void main(String[] args) {
-        Game game = new Game();
-        ControllerClass controller = new ControllerClass(game);
-        controller.begin();
+        Splash mySplash = new Splash();
+        mySplash.setVisible(true);
     }
 }
